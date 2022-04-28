@@ -1,0 +1,75 @@
+<h1 mat-dialog-title>{{formlabel}}</h1>
+<mat-divider></mat-divider>
+<br>
+<form [formGroup]="userForm">
+  <div mat-dialog-content>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>UerId</mat-label>
+      <input formControlName="UserId" matInput>
+    </mat-form-field>
+    <br>
+    <table cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input formControlName="FirstName" matInput>
+          </mat-form-field>
+        </td>
+        <br>
+        <td>
+          <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input formControlName="LastName" matInput>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input formControlName="Email" matInput type="email" id="email" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>MobileNo</mat-label>
+      <input type="tel" formControlName="MobileNo" matInput placeholder="98234 76543">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <br>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input formControlName="Password" matInput type="password" id="pass" name="password" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="full-width" appearance="outline">
+      <mat-label>Experience</mat-label>
+      <input matInput formControlName="Experience" type="number" id="tentacles" name="tentacles" min="0" max="20">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Address</mat-label>
+      <textarea formControlName="Address" matInput placeholder=""></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>CVLinkDescription</mat-label>
+      <textarea formControlName="CVLinkDescription" matInput placeholder=""></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Education</mat-label>
+      <input formControlName="Education" matInput>
+    </mat-form-field>
+    <br>
+    <table cellspacing="0">
+      <tr>
+        <td><button mat-raised-button color="primary" (click)="addUser()">{{actionbtn}}</button></td>
+        <br>
+        <td><button mat-raised-button color="accent" mat-dialog-close>CLOSE</button></td>
+      </tr>
+    </table>
+  </div>
+</form>

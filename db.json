@@ -1,0 +1,40 @@
+{
+  "userList": [
+    {
+      "UserId": "102",
+      "FirstName": "Pooja",
+      "LastName": "Madne",
+      "Email": "poojamadnae23@gmail.com",
+      "MobileNo": "9876543567",
+      "Password": "pooja",
+      "Experience": 3,
+      "Address": "baramati pune",
+      "CVLinkDescription": "good",
+      "Education": "MECH",
+      "id": 2
+    },
+    {
+      "UserId": "103",
+      "FirstName": "abc",
+      "LastName": "xyz",
+      "Email": "abc@gmail.com",
+      "MobileNo": "9876542345",
+      "Password": "abc",
+      "Experience": 0,
+      "Address": "baramati",
+      "CVLinkDescription": "good",
+      "Education": "CSE",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
